@@ -1,20 +1,15 @@
 import React from 'react'
 import Lottie from 'react-lottie';
-import * as animationData from '../../assets/lotties/296-react-logo.json'
+import * as animationData from '../../assets/lotties/developer_colors.json'
  
-export default class ReactLottie extends React.Component {
+export default class SkillsLottie extends React.Component {
  
   constructor(props) {
     super(props);
     this.state = {isStopped: false, isPaused: false};
   }
  
-  render() {
-    const buttonStyle = {
-      display: 'block',
-      margin: '10px auto'
-    };
- 
+  render() { 
     const defaultOptions = {
       loop: true,
       autoplay: true, 
@@ -27,7 +22,7 @@ export default class ReactLottie extends React.Component {
     return <div>
       <Lottie options={defaultOptions}
               height={400}
-              width={400}
+              width={500}
               isStopped={this.state.isStopped}
               isPaused={this.state.isPaused}/>
     </div>

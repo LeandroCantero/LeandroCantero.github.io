@@ -1,7 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 import styles from './Skills.module.css';
-import ReactLottie from '../../animations/ReactLottie';
+import SkillsLottie from '../../animations/SkillsLottie';
 
 function Skills() {
     return (
@@ -14,8 +14,7 @@ function Skills() {
             <div className={styles.container}>
                 <Fade left>
                     <div className={`${styles.left_content} ${styles.child}`}>
-                        {/* <img src="https://simpleprogrammer.com/wp-content/uploads/2016/07/Technical-Skills-As-A-Software-Developer.png" alt="" /> */}
-                        <ReactLottie/>
+                        <SkillsLottie/>
                     </div>
 
                 </Fade>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './AboutMe.module.css'
 import { ImGithub, ImLinkedin, ImInstagram, ImDownload3 } from 'react-icons/im'
+import DeveloperLottie from '../../animations/DeveloperLottie';
 
 function AboutMe() {
     return (
@@ -28,7 +29,7 @@ function AboutMe() {
                         </div>
                     </div>
                     <div className={`${styles.containerChild} ${styles.rightContainer}`}>
-                        <img id="programming-gif" src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" alt="" />
+                        <DeveloperLottie />
                     </div>
                 </div>
             </section>
