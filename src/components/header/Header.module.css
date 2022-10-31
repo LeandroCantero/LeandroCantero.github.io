@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 320px 50px;
+}
+
+.container ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.container h2 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
+}

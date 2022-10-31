@@ -1,0 +1,10 @@
+{
+    "english": {
+        "header": "Cantero Leandro",
+        "footer": "English footer"
+    },
+    "spanish": {
+        "header": "Cantero Leandro",
+        "footer": "footer en Español"
+    }
+}

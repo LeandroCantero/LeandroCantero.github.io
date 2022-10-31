@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.containerChild {
+    flex: 0 0 50%;
+    max-width: 40%;
+    padding: 10px;
+}
+
+.leftContainer {
+    font-size: 25px;
+}
+
+.rightContainer {
+    display: flex;
+    justify-content: center;
+}

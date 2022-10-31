@@ -1,0 +1,9 @@
+.fontColor {
+    color: white;
+}
+
+.headerAbout {
+    background: linear-gradient(209deg, rgba(37, 86, 190, 1) 0%, rgba(30, 178, 255, 1) 50%, rgba(0, 241, 255, 1) 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+    padding-bottom: 100px;
+}
