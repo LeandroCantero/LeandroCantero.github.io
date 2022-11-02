@@ -29,10 +29,10 @@ function Projects() {
                         loop={true}
                         loopFillGroupWithBlank={true}
                         grabCursor={true}
-                        // autoplay={{
-                        //     delay: 3500,
-                        //     disableOnInteraction: false,
-                        // }}
+                        autoplay={{
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        }}
                         pagination={{
                             dynamicBullets: true
                         }}

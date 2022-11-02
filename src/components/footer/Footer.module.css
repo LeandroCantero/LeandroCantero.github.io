@@ -36,7 +36,7 @@
 }
 
 .lottie{
-    margin-left: 40px;
+    margin: 0 40px;
 }
 
 .socialLinks {
@@ -78,7 +78,8 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #e2feff;
+    background-color: #2556be;
+    color: #00f1ff;
 }
 
 button svg {
@@ -97,4 +98,63 @@ button svg {
     margin-bottom: -3px;
     height: auto;
     vertical-align: bottom;
+}
+
+.enviarMail {
+    margin-left: 40px;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.element {
+    width: 300px;
+    margin: 10px 0;
+}
+
+.element input, .element textarea{
+    border: none;
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.element textarea{
+    height: 80px;
+}
+
+.element input:focus, .element textarea:focus {
+    outline-color: #00f1ff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.buttons button{
+    width: 20%;
+    margin: 15px 5px 5px;
+    color: black;
+    background-color: #2dce89;
+}
+
+.buttons button:hover{
+    background-color: #12af6b;
+}
+
+.buttons button:first-child{
+    background-color: #e20000;
+}
+
+.buttons button:first-child:hover{
+    background-color: #ce0101;
 }
