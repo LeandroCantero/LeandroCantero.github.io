@@ -1,22 +1,31 @@
 import React from 'react'
+import Card from '../cards/Cards/Card'
+import { ImBooks } from 'react-icons/im'
+import containerStyle from '../../ContainerStyle.module.css'
+import educationStyle from './Education.module.css'
+import Fade from 'react-reveal/Fade';
 
 function Education() {
     return (
-        <section className='education'>
-            <div className='container'>
-                <div className='title'>
-                    <div className='emoji'>
-                        .
-                    </div>
+        <section className={educationStyle.education}>
+            <div className={containerStyle.container}>
+                <Fade left>
                     <div>
-                        <h2>Education</h2>
+                        <h2 style={{ color: "white" }} className={containerStyle.title}><ImBooks />Education</h2>
                     </div>
-                </div>
-                <div className='ed-card'>
-                    <h3>Unahur</h3>
-                    <p>Carrera</p>
-                    <p>Fecha</p>
-                </div>
+                </Fade>
+
+                <Fade right>
+                    <a href="https://unahur.edu.ar/tecnicatura-universitaria-en-programacion/" target="_blank" rel="noopener noreferrer">
+                        <Card
+                            title="Universidad Nacional de Hurlingham"
+                            subtitle="Tec. en Programación"
+                            date="Febrero 2017 - Actualidad"
+                            desc1="Carrera dedicada al mundo IT, enfocada en programación."
+                            desc2="Cursando el segundo año de la carrera."
+                        />
+                    </a>
+                </Fade>
             </div>
         </section>
     )

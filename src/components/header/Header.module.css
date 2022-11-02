@@ -27,7 +27,10 @@
     color: white;
 }
 
+.nav_item a {
+    transition: 0.3s;
+}
+
 .nav_item a:hover {
     color: #00f1ff;
-    transition: 0.3s;
 }

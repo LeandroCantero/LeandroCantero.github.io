@@ -32,15 +32,18 @@
     text-decoration: none;
     color: white;
     margin-right: 20px;
+    transition: .3s;
 }
 
 .socialLinks a:hover {
     color: #2556be;
-    transition: 0.3s;
+}
+
+.socialLinks svg{
+    transition: transform .3s;
 }
 
 .socialLinks svg:hover{
-    transition: transform .3s;
     transform: scale(1.5);
 }
 

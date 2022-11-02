@@ -1,16 +1,18 @@
 import React from 'react'
+import styles from './Footer.module.css'
+import ContactLottie from '../animations/ContactLottie.js'
 
 function Footer() {
 
   return (
-    <div className='footer-section'>
-      <div className='container'>
-        <div className='contact-me'>
+    <div className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.contacMe}>
           <h1>Contactame</h1>
           <p>emojis etc...</p>
         </div>
-        <div className='photo'>
-          <img src="https://www.diplomadosonline.com/wp-content/uploads/2022/06/fullstack-developer-2-300x300.png" alt="" />
+        <div className={styles.lottie}>
+          <ContactLottie/>
         </div>
       </div>
     </div>

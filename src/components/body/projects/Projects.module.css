@@ -1,0 +1,12 @@
+.section {
+    padding: 20px 0px;
+}
+
+.mySwiper{
+    width: 90%;
+    padding: 5px 42px;
+}
+
+.swiperNavPrev {
+    color: red;
+}

@@ -1,23 +1,30 @@
 import React from 'react'
+import Card from '../cards/Cards/Card'
+import { ImBooks } from 'react-icons/im'
+import experienceStyle from './Experience.module.css'
+import containerStyle from '../../ContainerStyle.module.css'
+import Fade from 'react-reveal/Fade';
 
 function Experience() {
     return (
-        <section className='experience'>
-            <div className='container'>
-                <div className='title'>
-                    <div className='emoji'>
-                        .
-                    </div>
+        <section className={experienceStyle.section}>
+            <div className={containerStyle.container}>
+                <Fade right>
                     <div>
-                        <h2>Education</h2>
+                        <h2 className={containerStyle.title}><ImBooks />Experience</h2>
                     </div>
-                </div>
-                <div className='ex-card'>
-                    <h3>Huenei</h3>
-                    <p>Puesto</p>
-                    <p>Que hice</p>
-                    <p>Fecha</p>
-                </div>
+                </Fade>
+                <Fade left>
+                    <a href="https://www.huenei.com/en/" target="_blank" rel="noopener noreferrer">
+                        <Card
+                            title="Huenei IT"
+                            subtitle="Analista Programador"
+                            date="Noviembre 2021 - Mayo 2022"
+                            desc1="Trabajé cómo desarrollador Fullstack."
+                            desc2="Utilicé .NET, Windows Form y SVN."
+                        />
+                    </a>
+                </Fade>
             </div>
         </section>
     )
