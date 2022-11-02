@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../cards/Cards/Card'
-import { ImBooks } from 'react-icons/im'
+import { MdOutlineWork } from 'react-icons/md'
 import experienceStyle from './Experience.module.css'
 import containerStyle from '../../ContainerStyle.module.css'
 import Fade from 'react-reveal/Fade';
@@ -11,7 +11,7 @@ function Experience() {
             <div className={containerStyle.container}>
                 <Fade right>
                     <div>
-                        <h2 className={containerStyle.title}><ImBooks />Experience</h2>
+                        <h2 className={containerStyle.title}><MdOutlineWork />Experience</h2>
                     </div>
                 </Fade>
                 <Fade left>

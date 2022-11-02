@@ -15,10 +15,86 @@
     align-items: center;
 }
 
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
 .contacMe{
     margin-right: 40px;
 }
 
+.contacMe a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.mail:hover{
+    color: #2556be;
+}
+
 .lottie{
     margin-left: 40px;
+}
+
+.socialLinks {
+    font-size: 28px;
+}
+
+.socialLinks a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+.socialLinks a:hover {
+    color: #2556be;
+}
+
+.socialLinks svg{
+    transition: transform .3s;
+}
+
+.socialLinks svg:hover{
+    transform: scale(1.5);
+}
+
+button {
+    border: none;
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+    font-weight: bold;
+    color: #1eb2ff;
+    text-transform: uppercase;
+    background-color: white;
+    transition: .5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #e2feff;
+}
+
+button svg {
+    width: 20px;
+    height: auto;
+    vertical-align: bottom;
+    margin-right: 8px;
+}
+
+.buttons .demo span {
+    margin-left: 10px;
+}
+
+.buttons button svg {
+    width: 22px;
+    margin-bottom: -3px;
+    height: auto;
+    vertical-align: bottom;
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import projectsStyle from './Projects.module.css'
 import containerStyle from '../../ContainerStyle.module.css'
-import ExperienceCard from '../cards/ProjectsCards/ProjectCard'
-import { ImBooks } from 'react-icons/im'
+import ProjectCard from '../cards/ProjectsCards/ProjectCard'
+import ProjectCardNoDemo from '../cards/ProjectsCards/ProjectCardNoDemo'
+import { FaClipboardList } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, A11y, Mousewheel, Autoplay } from 'swiper';
 import Fade from 'react-reveal/Fade';
@@ -17,7 +18,7 @@ function Projects() {
             <Fade bottom>
                 <div className={containerStyle.container}>
                     <div>
-                        <h2 className={containerStyle.title}><ImBooks /> Projects</h2>
+                        <h2 className={containerStyle.title}><FaClipboardList /> Projects</h2>
                     </div>
                 </div>
                 <div>
@@ -28,17 +29,17 @@ function Projects() {
                         loop={true}
                         loopFillGroupWithBlank={true}
                         grabCursor={true}
-                        autoplay={{
-                            delay: 3500,
-                            disableOnInteraction: false,
-                        }}
+                        // autoplay={{
+                        //     delay: 3500,
+                        //     disableOnInteraction: false,
+                        // }}
                         pagination={{
                             dynamicBullets: true
                         }}
                         className={projectsStyle.mySwiper}
                     >
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCard
                                 title="Kiosco App (e-commerce)"
                                 src="https://user-images.githubusercontent.com/42678932/192650728-f0dc13af-ebaa-437f-86ce-fc87b3fc5a01.png"
                                 desc='Proyecto realizado con el MERN stack, el cual simula un Kiosco con carrito de compras.
@@ -48,7 +49,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCard
                                 title="GuitarLA (e-commerce)"
                                 src="https://user-images.githubusercontent.com/42678932/186787483-90c6a21c-3555-43fc-ae97-1f1707a54fbe.png"
                                 desc="Proyecto realizado con React. Simula una página de ventas de Guitarras."
@@ -56,7 +57,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCard
                                 title="Citas Veterinaria"
                                 src="https://user-images.githubusercontent.com/42678932/199384441-5d99eddb-8eb8-4b2e-9c14-01f594e104f4.png"
                                 desc="Proyecto realizado con React, Vite JS y Tailwind CSS. Simula una app de citas (turnos) para una veterinaria."
@@ -65,7 +66,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCard
                                 title="Cotizador Cripto"
                                 src="https://camo.githubusercontent.com/0fa63bb25e8fb31eed716411108158af641702409a6425a45bd08b5b6604f3d4/68747470733a2f2f692e696d6775722e636f6d2f364469554547692e706e67"
                                 desc="Proyecto realizado con React, Vite JS y consumiendo una API (Cryptocompare)."
@@ -74,7 +75,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCard
                                 title="Cotizador de Seguros"
                                 src="https://user-images.githubusercontent.com/42678932/186785447-2ff926c7-cf1e-4a53-bfa7-bdfed2e4617a.png"
                                 desc="Proyecto realizado con React y Vite JS. Simula una cotización de seguros para autos."
@@ -83,7 +84,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCard
                                 title="Buscador de Bebidas"
                                 src="https://user-images.githubusercontent.com/42678932/188517107-7ccaf787-818d-434e-9637-c050b8d356e0.png"
                                 desc="Proyecto realizado con React y consumiendo una API (TheCocktailDB)."
@@ -92,7 +93,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCard
                                 title="Control de gastos"
                                 src="https://user-images.githubusercontent.com/42678932/188520478-444db81f-7513-4b46-ad58-e96a9584c9dd.png"
                                 desc="Proyecto realizado con React y Vite JS. App para controlar gastos."
@@ -101,7 +102,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCardNoDemo
                                 title="Noticias API"
                                 src="https://user-images.githubusercontent.com/42678932/187789379-c2e229e5-850f-4b6e-b632-76de830e8d27.png"
                                 desc="Proyecto realizado con React. Buscador de noticias consumiendo una API (newsapi)"
@@ -109,7 +110,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCardNoDemo
                                 title="Clima App"
                                 src="https://user-images.githubusercontent.com/42678932/187529301-ce801294-0b42-4cb6-9f8c-9d5d067b362f.png"
                                 desc="Proyecto realizado con React. Consultar el clima consumiendo una API (OpenWeather)"
@@ -117,7 +118,7 @@ function Projects() {
                             />
                         </SwiperSlide>
                         <SwiperSlide className={projectsStyle.swipersSlide}>
-                            <ExperienceCard
+                            <ProjectCardNoDemo
                                 title="Buscador de Letras"
                                 src="https://user-images.githubusercontent.com/42678932/187294736-3cdaafce-d265-45ba-a3dd-06dd6cc4f0f0.png"
                                 desc="Proyecto realizado con React. Buscar canciones consumiendo una API (lyrics.ovh)."
