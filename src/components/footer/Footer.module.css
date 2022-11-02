@@ -20,6 +20,10 @@
     flex-direction: column;
 }
 
+.text h1 {
+    margin-bottom: 0px;
+}
+
 .contacMe{
     margin-right: 40px;
 }

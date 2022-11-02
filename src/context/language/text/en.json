@@ -1,0 +1,51 @@
+{
+  "------------------header------------": "",
+  "header-init": "Inicio()",
+  "header-portfolio": "Portafolio()",
+  "header-contact": "Contacto()",
+
+  "---------------home-comment---------": "",
+  "home-title": "Hello world, my name is Leandro",
+  "home-text": "I am a full-stack developer, passionate about the IT world. I decided to study a degree in Computer Science at the age of 18, in parallel to this I learn through courses and online platforms. I have a lot of fun using logical thinking and creating solutions.",
+  "home-download-cv": "Resume",
+
+  "--------------Skills------": "",
+  "skills-title": "Skills",
+  "skills-subtitle": "Technologies learned so far and what I can do with them.",
+  "skills-stack": "Desarrollo Fullstack",
+  "skills-what-i-do": [
+    "Build responsive websites in React.",
+    " Building REST services with Spring.",
+    "Build RESTful APIs with the MERN stack."
+  ],
+
+  "--------------Education------------": "",
+  "education-title": "Education",
+  "education-card-title": "National University of Hurlingham",
+  "education-card-subtitle": "Programming Degree",
+  "education-card-date": "February 2017 - Present",
+  "education-card-p1": "Career dedicated to the IT world, focused on programming.",
+  "education-card-p2": "Currently in the second year of the career.",
+
+  "--------------Experience------------": "",
+  "experience-title": "Experience",
+  "experience-card-title": "Huenei IT",
+  "experience-card-subtitle": "Analyst Programmer",
+  "experience-card-date": "Noviembre 2021 - Mayo 2022",
+  "experience-card-p1": "Fullstack Development",
+  "experience-card-p2": "I used Net framework and Windows Form.",
+
+  "--------------Projects------------": "",
+  "project-title": "Projects",
+  "project-card-title": ["Kiosco App (e-commerce)", "GuitarLA (e-commerce)", "Citas Veterinaria", "Cotizador Cripto", "Cotizador de Seguros", "Buscador de Bebidas", "Control de Gastos", "Noticias API", "Clima App", "Buscador de Letras"],
+  "project-card-desc": ["Project made with the MERN stack, which simulates a Kiosk with shopping cart.", "Project made with React. It simulates a Guitar sales page.", "Project made with React, Vite JS and Tailwind CSS. It simulates an appointment app for a veterinarian.", "Project made with React, Vite JS and consuming an API (Cryptocompare).", "Project made with React and Vite JS. Simulates a car insurance quote.", "Project made with React and consuming an API (TheCocktailDB).", "Project made with React and Vite JS. App to control expenses.", "Project made with React. News search engine consuming an API (newsapi)", "Project made with React. Query the weather consuming an API (OpenWeather)", "Project made with React. Search songs by consuming an API (lyrics.ovh)."],
+
+  "-----------contact-footer--------------": "",
+  "contact-form-title": "Contact",
+  "contact-form-dev": "Fullstack Developer",
+  "contact-form-send": "Send Mail",
+
+  "--------------language-selector------": "",
+  "spanish": "Español",
+  "english": "Inglés"
+}

@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Footer.module.css'
 import ContactLottie from '../animations/ContactLottie.js'
 import { ImGithub, ImLinkedin, ImInstagram } from 'react-icons/im'
 import { HiLocationMarker, HiMail } from 'react-icons/hi'
 import Modal from 'react-modal'
+import LanguageContext from '../../context/language/LanguageProvider'
 
 const customStyles = {
   content: {
@@ -22,6 +23,7 @@ Modal.setAppElement('#root');
 
 function Footer() {
 
+  const { dictionary } = useContext(LanguageContext);
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
@@ -37,8 +39,8 @@ function Footer() {
       <div className={styles.container}>
         <div className={styles.contacMe}>
           <div className={styles.text}>
-            <h1>Contacto</h1>
-            <p>Fullstack Developer</p>
+            <h1>{dictionary["contact-form-title"]}</h1>
+            <p>{dictionary["contact-form-dev"]}</p>
             <a className={styles.mail} href='mailto:lcantero18@gmail.com'>lcantero18@gmail.com</a>
             <button
               type="button"
@@ -59,7 +61,7 @@ function Footer() {
         </div>
 
         <div className={styles.enviarMail}>
-          <button onClick={openModal}><HiMail /> <span>Enviar Mail</span></button>
+          <button onClick={openModal}><HiMail /> <span>{dictionary["contact-form-send"]}</span></button>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}

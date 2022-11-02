@@ -1,6 +1,6 @@
 import "./App.css";
 import Body from "./components/body/Body";
-import { LanguageProvider } from "./context/LanguageProvider";
+import { LanguageProvider } from "./context/language/LanguageProvider";
 
 function App() {
   return (

@@ -1,16 +1,20 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Fade from 'react-reveal/Fade';
 import styles from './Skills.module.css';
 import SkillsLottie from '../../animations/SkillsLottie';
 import ReactTooltip from 'react-tooltip'
 import emoji from 'react-easy-emoji'
+import LanguageContext from '../../../context/language/LanguageProvider';
 
 function Skills() {
+
+    const { dictionary } = useContext(LanguageContext);
+
     return (
         <div className={styles.skills_section}>
             <div className={styles.text_top}>
-                <h1>Habilidades</h1>
-                <p>Tecnologías aprendidas por el momento y que puedo hacer con ellas.</p>
+                <h1>{dictionary["skills-title"]}</h1>
+                <p>{dictionary["skills-subtitle"]}</p>
             </div>
 
             <div className={styles.container}>
@@ -23,7 +27,7 @@ function Skills() {
 
                 <Fade right>
                     <div className={`${styles.right_content} ${styles.child}`}>
-                        <h3>Fullstack Development</h3>
+                        <h3>{dictionary["skills-stack"]}</h3>
                         <div className={styles.technologies}>
                             <iconify-icon icon="vscode-icons:file-type-html" data-tip="HTML"></iconify-icon>
                             <iconify-icon icon="vscode-icons:file-type-css" data-tip="CSS"></iconify-icon>
@@ -38,16 +42,16 @@ function Skills() {
                             <iconify-icon icon="vscode-icons:file-type-mongo" data-tip="MongoDB"></iconify-icon>
                             <iconify-icon icon="logos:npm-icon" data-tip="NPM"></iconify-icon>
                             <iconify-icon icon="logos:git-icon" data-tip="Git"></iconify-icon>
-                            <ReactTooltip 
+                            <ReactTooltip
                                 place="bottom"
                                 effect="solid"
                                 padding="8px"
                             />
                         </div>
                         <div className={styles.extra_skills}>
-                            <p>{ emoji('🛠️') } Construir sitios web responsive en React.</p>
-                            <p>{ emoji('🛠️') } Crear servicios REST con Spring</p>
-                            <p>{ emoji('🛠️') } Construir RESTful APIs con el MERN stack.</p>
+                            <p>{emoji('🛠️')} {dictionary["skills-what-i-do"][0]}</p>
+                            <p>{emoji('🛠️')} {dictionary["skills-what-i-do"][1]}</p>
+                            <p>{emoji('🛠️')} {dictionary["skills-what-i-do"][2]}</p>
                         </div>
                     </div>
                 </Fade>
