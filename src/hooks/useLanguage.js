@@ -5,7 +5,7 @@ import emoji from 'react-easy-emoji'
 
 
 export default function useLanguage() {
-  const { userLanguage, userLanguageChange } = useContext(
+  const { userLanguageChange } = useContext(
     LanguageContext
   );
 

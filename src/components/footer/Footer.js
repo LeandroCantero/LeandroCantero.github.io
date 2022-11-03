@@ -1,10 +1,13 @@
 import React, { useContext } from 'react'
 import styles from './Footer.module.css'
+import './Footer.css'
 import ContactLottie from '../animations/ContactLottie.js'
 import { ImGithub, ImLinkedin, ImInstagram } from 'react-icons/im'
 import { HiLocationMarker, HiMail } from 'react-icons/hi'
+import {BiUpArrow} from 'react-icons/bi'
 import Modal from 'react-modal'
 import LanguageContext from '../../context/language/LanguageProvider'
+import ScrollToTop from "react-scroll-to-top";
 
 const customStyles = {
   content: {
@@ -36,6 +39,7 @@ function Footer() {
 
   return (
     <div className={styles.footer}>
+      <ScrollToTop smooth component={<BiUpArrow/>}/>
       <div className={styles.container}>
         <div className={styles.contacMe}>
           <div className={styles.text}>

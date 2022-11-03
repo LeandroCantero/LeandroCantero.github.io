@@ -1,0 +1,11 @@
+.scroll-to-top {
+    color: #2556be !important;
+    background-color: #00f1ff !important;
+    margin: 0 !important;    
+}
+
+.scroll-to-top:hover{
+    cursor: pointer !important;
+    background-color: #2556be !important;
+    color: #00f1ff !important;
+}
