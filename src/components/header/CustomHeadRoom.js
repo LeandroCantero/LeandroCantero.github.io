@@ -2,6 +2,7 @@ import React from 'react'
 import HeadRoom from 'react-headroom'
 import styles from './Header.module.css'
 import './HeadRoom.css'
+import UseLanguage from '../../hooks/UseLanguage.js'
 
 function CustomHeadRoom() {
     return (
