@@ -20,7 +20,7 @@ function Projects() {
     console.log(size.width)
     function mediaQuery(){
         let slidesPView = 3;
-        if((size.width < 1300 & size.width > 800)){
+        if((size.width < 1300 & size.width > 767)){
             slidesPView = 2;
         }
         /* #3- Landscape phone to portrait tablet */

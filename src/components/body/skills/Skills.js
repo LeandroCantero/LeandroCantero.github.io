@@ -32,11 +32,11 @@ function Skills() {
                             <iconify-icon icon="vscode-icons:file-type-html" data-tip="HTML"></iconify-icon>
                             <iconify-icon icon="vscode-icons:file-type-css" data-tip="CSS"></iconify-icon>
                             <iconify-icon icon="logos:javascript" data-tip="Javascript"></iconify-icon>
-                            <iconify-icon icon="logos:react" data-tip="React"></iconify-icon>
-                            <iconify-icon icon="logos:nodejs-icon" data-tip="Node"></iconify-icon>
+                            <iconify-icon icon="logos:react" width="40" height="40" data-tip="React"></iconify-icon>
+                            <iconify-icon icon="logos:nodejs-icon" width="40" height="40" data-tip="Node"></iconify-icon>
                             <iconify-icon icon="logos:vitejs" data-tip="Vite Js"></iconify-icon>
                             <iconify-icon icon="logos:nextjs-icon" data-tip="Next Js"></iconify-icon>
-                            <iconify-icon icon="logos:dotnet" data-tip=".NET"></iconify-icon>
+                            <iconify-icon icon="logos:dotnet" width="40" height="40" data-tip=".NET"></iconify-icon>
                             <iconify-icon icon="logos:java" width="40" height="40" data-tip="Java"></iconify-icon>
                             <iconify-icon icon="logos:spring-icon" data-tip="Spring"></iconify-icon>
                             <iconify-icon icon="vscode-icons:file-type-mongo" data-tip="MongoDB"></iconify-icon>
