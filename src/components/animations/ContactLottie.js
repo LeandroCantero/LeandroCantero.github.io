@@ -1,30 +1,32 @@
 import React from 'react'
 import Lottie from 'react-lottie';
-import * as animationData from '../../assets/lotties/76038-contact-mail.json'
- 
+import * as animationData from '../../assets/lotties/contact.json'
+
 export default class SkillsLottie extends React.Component {
- 
+
   constructor(props) {
     super(props);
-    this.state = {isStopped: false, isPaused: false};
+    this.state = { isStopped: false, isPaused: false };
   }
- 
-  render() { 
+
+  render() {
     const defaultOptions = {
       loop: true,
-      autoplay: true, 
+      autoplay: true,
       animationData: animationData,
       rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice'
+        preserveAspectRatio: 'xMidYMid slice',
+        className: "lottie-svg-class",
+        id: "lottie-svg-id"
       }
     };
- 
+
     return <div>
       <Lottie options={defaultOptions}
-              height={400}
-              width={400}
-              isStopped={this.state.isStopped}
-              isPaused={this.state.isPaused}/>
+        height={300}
+        width={300}
+        isStopped={this.state.isStopped}
+        isPaused={this.state.isPaused} />
     </div>
   }
 }

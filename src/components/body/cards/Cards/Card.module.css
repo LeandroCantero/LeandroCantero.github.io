@@ -47,9 +47,10 @@
     margin: 5px;
 }
 
-@media (max-width: 600px) {
+/* #3- Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
     .card {
-        width: 95%;
         margin: auto;
     }
 }

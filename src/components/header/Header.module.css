@@ -6,12 +6,11 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 320px 50px;
 }
 
-.container ul li{
+.container ul li {
     list-style: none;
     display: inline-block;
     margin: 10px;
@@ -27,31 +26,3 @@
     color: white;
 }
 
-.nav_item a {
-    transition: 0.3s;
-}
-
-.nav_item a:hover {
-    color: #00f1ff;
-}
-
-.menu_responsive {
-    display: none;
-}
-
-@media (max-width: 600px) {
-    .container {
-        display: flex;
-        justify-content: space-around;
-        margin: 0px 10px;
-    }
-
-    .container ul {
-        display: none;
-    }
-
-    .menu_responsive {
-        display: flex;
-        color: white;
-    }
-}

@@ -23,7 +23,8 @@ function Projects() {
         if((size.width < 1300 & size.width > 800)){
             slidesPView = 2;
         }
-        else if(size.width <= 800) {
+        /* #3- Landscape phone to portrait tablet */
+        else if(size.width <= 767) {
             slidesPView = 1;
         }
         return slidesPView
@@ -48,7 +49,7 @@ function Projects() {
                         loopFillGroupWithBlank={true}
                         grabCursor={true}
                         autoplay={{
-                            delay: 4000,
+                            delay: 3000,
                             disableOnInteraction: false,
                         }}
                         pagination={{

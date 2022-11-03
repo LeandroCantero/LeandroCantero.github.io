@@ -37,7 +37,9 @@ iconify-icon {
     margin: 30px 0;
 }
 
-@media (max-width: 600px) {
+/* #3- Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
     .container {
         display: flex;
         flex-direction: column;
