@@ -11,7 +11,7 @@ import styles from './MainBg.module.css'
 
 function Body() {
   return (
-    <div>
+    <div className={styles.body}>
       <CustomHeadRoom className={styles.fontColor} />
       <main>
         <div className={`${styles.headerAbout} ${styles.fontColor}`}>

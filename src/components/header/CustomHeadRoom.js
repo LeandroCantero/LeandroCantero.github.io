@@ -20,6 +20,11 @@ function CustomHeadRoom() {
                     </ul>
                 </div>
                 <UseLanguage />
+                <div className={styles.menu_responsive }>
+                    .
+                    .
+                    .
+                </div>
             </div>
         </HeadRoom>
     )

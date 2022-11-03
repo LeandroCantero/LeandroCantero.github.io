@@ -2,7 +2,7 @@
     color: black;
     background-color: white;
     width: 380px;
-    height: 260px;
+    height: 280px;
     border-radius: 10px;
     box-shadow: 2px 2px 15px 1px #2556be;
     transition: .5s;
@@ -45,4 +45,11 @@
 .desc p {
     font-size: 14px;
     margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 95%;
+        margin: auto;
+    }
 }

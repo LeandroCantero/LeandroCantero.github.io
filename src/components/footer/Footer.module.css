@@ -162,3 +162,36 @@ button svg {
 .buttons button:first-child:hover{
     background-color: #ce0101;
 }
+
+@media (max-width: 600px) {
+    .lottie {
+        display: none;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacMe {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enviarMail{
+        margin: 0;
+    }
+
+    .footer{
+        height: 350px;
+    }
+
+    .socialLinks {
+        margin: 10px 0;
+    }
+}
+

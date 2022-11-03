@@ -12,8 +12,22 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import LanguageContext from '../../../context/language/LanguageProvider'
+import useWindowSize from '../../../hooks/useWindowsSize'
 
 function Projects() {
+
+    const size = useWindowSize();
+    console.log(size.width)
+    function mediaQuery(){
+        let slidesPView = 3;
+        if((size.width < 1300 & size.width > 800)){
+            slidesPView = 2;
+        }
+        else if(size.width <= 800) {
+            slidesPView = 1;
+        }
+        return slidesPView
+    }
 
     const { dictionary } = useContext(LanguageContext);
 
@@ -29,7 +43,7 @@ function Projects() {
                     <Swiper
                         modules={[Autoplay, Pagination, Scrollbar, A11y, Mousewheel]}
                         spaceBetween={50}
-                        slidesPerView={3}
+                        slidesPerView={mediaQuery()}
                         loop={true}
                         loopFillGroupWithBlank={true}
                         grabCursor={true}

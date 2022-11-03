@@ -29,7 +29,7 @@ function AboutMe() {
                         </div>
                     </div>
                     <div className={`${styles.containerChild} ${styles.rightContainer}`}>
-                        <DeveloperLottie />
+                        <DeveloperLottie/>
                     </div>
                 </div>
             </section>
