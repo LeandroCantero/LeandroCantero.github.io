@@ -1,25 +1,35 @@
 .headroom {
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-  }
-  .headroom--unfixed {
-    position: relative;
-    transform: translateY(0);
-  }
-  .headroom--scrolled {
-    transition: transform 200ms ease-in-out;
-  }
-  .headroom--unpinned {
-    position: fixed;
-    height: 116px;
-    transform: translateY(-100%);
-    transition: .5s ease-in-out;
-  }
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+
+.headroom--unpinned {
+  position: fixed;
+  height: 116px;
+  transform: translateY(-100%);
+  transition: .5s ease-in-out;
+}
+
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+  background-color: #2556be;
+  height: 116px;
+}
+
+@media (max-width: 480px) {
   .headroom--pinned {
-    position: fixed;
-    transform: translateY(0%);
-    background-color: #2556be;
-    height: 116px;
+    height: 90px;
   }
+}
