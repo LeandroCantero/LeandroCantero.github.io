@@ -1,6 +1,7 @@
 import React, {useContext}from 'react'
 import styles from './AboutMe.module.css'
 import { ImGithub, ImLinkedin, ImInstagram, ImDownload3 } from 'react-icons/im'
+import { FaFileAlt} from 'react-icons/fa'
 import DeveloperLottie from '../../animations/DeveloperLottie';
 import { LanguageContext } from '../../../context/language/LanguageProvider';
 
@@ -21,10 +22,14 @@ function AboutMe() {
                             <a href="https://www.linkedin.com/in/leandro-cantero/" target="_blank" rel="noopener noreferrer"><ImLinkedin /></a>
                             <a href="https://www.instagram.com/leandrobjs/" target="_blank" rel="noopener noreferrer"><ImInstagram /></a>
                         </div>
-                        <div className={styles.downloadBtn}>
-                            <a className={styles.downloadCv} href="CV.pdf" download>
+                        <div className={styles.resumeBtns}>
+                            <a className={styles.resume} href="CV.pdf" download>
                                 <span className={styles.downloadIcon}><ImDownload3 /></span>
                                 <span className={styles.downloadText}>{dictionary["home-download-cv"]}</span>
+                            </a>
+                            <a className={styles.resume} href="https://leandrocantero-cv.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <span className={styles.downloadIcon}><FaFileAlt /></span>
+                                <span className={styles.downloadText}>{dictionary["home-online-cv"]}</span>
                             </a>
                         </div>
                     </div>
