@@ -3,6 +3,7 @@ import HeadRoom from 'react-headroom'
 import styles from './Header.module.css'
 import './HeadRoom.css'
 import { ImGithub, ImLinkedin, ImInstagram } from 'react-icons/im'
+import UseLanguage from '../../hooks/UseLanguage'
 
 function CustomHeadRoom() {
     return (
@@ -18,6 +19,7 @@ function CustomHeadRoom() {
                         <li className={styles.nav_item}><a href="https://www.instagram.com/leandrobjs/" target="_blank" rel="noopener noreferrer"><ImInstagram /></a></li>
                     </ul>
                 </div>
+                <UseLanguage />
             </div>
         </HeadRoom>
     )

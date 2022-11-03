@@ -6,13 +6,13 @@
 
   "---------------home-comment---------": "",
   "home-title": "Hello world, my name is Leandro",
-  "home-text": "I am a full-stack developer, passionate about the IT world. I decided to study a degree in Computer Science at the age of 18, in parallel to this I learn through courses and online platforms. I have a lot of fun using logical thinking and creating solutions.",
-  "home-download-cv": "Resume",
+  "home-text": "I am a full-stack developer and a passionate about the IT world. I decided to study a degree in Computer Science at the age of 18, in parallel to this I learn through courses and online platforms. I have a lot of fun using logical thinking and creating solutions.",
+  "home-download-cv": "Download Resume",
 
   "--------------Skills------": "",
   "skills-title": "Skills",
   "skills-subtitle": "Technologies learned so far and what I can do with them.",
-  "skills-stack": "Desarrollo Fullstack",
+  "skills-stack": "Fullstack Development",
   "skills-what-i-do": [
     "Build responsive websites in React.",
     " Building REST services with Spring.",
@@ -31,7 +31,7 @@
   "experience-title": "Experience",
   "experience-card-title": "Huenei IT",
   "experience-card-subtitle": "Analyst Programmer",
-  "experience-card-date": "Noviembre 2021 - Mayo 2022",
+  "experience-card-date": "Nov 2021 - May 2022",
   "experience-card-p1": "Fullstack Development",
   "experience-card-p2": "I used Net framework and Windows Form.",
 

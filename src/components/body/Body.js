@@ -12,7 +12,7 @@ import styles from './MainBg.module.css'
 function Body() {
   return (
     <div>
-      <CustomHeadRoom className={styles.fontColor}/>
+      <CustomHeadRoom className={styles.fontColor} />
       <main>
         <div className={`${styles.headerAbout} ${styles.fontColor}`}>
           <AboutMe />

@@ -1,0 +1,7 @@
+.emoji img{
+    font-size: 20px;    
+}
+
+.emoji img:hover{
+    cursor: pointer;
+}

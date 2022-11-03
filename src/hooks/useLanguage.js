@@ -1,32 +1,37 @@
-import { useContext, useEffect  } from "react";
+import { useContext, useEffect } from "react";
 import LanguageContext from "../context/language/LanguageProvider";
+import styles from "./UseLanguage.module.css"
+import emoji from 'react-easy-emoji'
+
 
 export default function useLanguage() {
-    const { userLanguage, userLanguageChange, dictionary } = useContext(
-        LanguageContext
-    );
+  const { userLanguage, userLanguageChange } = useContext(
+    LanguageContext
+  );
 
-    const handleSelectSpanish = e => userLanguageChange('es');
-    const handleSelectEnglish = e => userLanguageChange('en');
+  const handleSelectSpanish = e => userLanguageChange('es');
+  const handleSelectEnglish = e => userLanguageChange('en');
 
-    useEffect(() => {
-        let defaultLanguage = window.localStorage.getItem('rcml-lang');
-        if (!defaultLanguage) {
-            defaultLanguage = window.navigator.language.substring(0, 2);
-        }
-        userLanguageChange(defaultLanguage);
-    }, [userLanguageChange]);
+  useEffect(() => {
+    let defaultLanguage = window.localStorage.getItem('rcml-lang');
+    if (!defaultLanguage) {
+      defaultLanguage = window.navigator.language.substring(0, 2);
+    }
+    userLanguageChange(defaultLanguage);
+  }, [userLanguageChange]);
 
-    return (
-        <div className="Language-selector">
-          <p className="Language-selector__es" onClick={handleSelectSpanish}>
-            {dictionary['spanish']}
-          </p>
-          {' | '}
-          <p className="Language-selector__en" onClick={handleSelectEnglish}>
-            {dictionary['english']}
-          </p>
-        </div>
-      );
+  return (
+    <div className={styles.languageSelector}>
+      <ul className={styles.emojiList}>
+        <li className={styles.emoji} onClick={handleSelectSpanish}>
+          {emoji('🇪🇸')}
+        </li>
+        <li className={styles.emoji} onClick={handleSelectEnglish}>
+          {emoji('🇬🇧')}
+        </li>
+        <li></li>
+      </ul>
+    </div >
+  );
 
 }
