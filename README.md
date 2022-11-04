@@ -16,6 +16,7 @@
 -   [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
 -   [react-headroom](https://github.com/KyleAMathews/react-headroom)
 -   [react-icons](https://react-icons.github.io/react-icons)
+-   [react-tooltip](https://www.npmjs.com/package/react-tooltip)
 -   [react-scroll-to-top](https://www.npmjs.com/package/react-scroll-to-top)
 -   [iconify](https://iconify.design/)
 -   [swiper-api](https://swiperjs.com/swiper-api)
