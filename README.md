@@ -24,4 +24,4 @@
 
 ## Inspiration
 
-[Portfolio Inspiration](https://github.com/1hanzla100/developer-portfolio/edit/master/README.md)
+[Portfolio Inspiration](https://github.com/1hanzla100/developer-portfolio)
