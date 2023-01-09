@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.container ul {
+    padding: 0;
+}
+
 .container ul li {
     list-style: none;
     display: inline-block;
@@ -26,3 +30,14 @@
     color: white;
 }
 
+@media (max-width: 480px) {
+    .container h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container h2 {
+        font-size: 25px;
+    }
+}

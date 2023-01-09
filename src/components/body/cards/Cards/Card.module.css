@@ -1,4 +1,4 @@
-.card{
+.card {
     color: black;
     background-color: white;
     width: 380px;
@@ -23,10 +23,12 @@
     margin-bottom: 0;
     font-weight: 500;
 }
+
 .card_text p {
     margin-top: 10px;
     font-size: 18px;
 }
+
 .card_text span {
     color: white;
     font-weight: bold;
@@ -52,5 +54,18 @@
 @media (max-width: 767px) {
     .card {
         margin: auto;
+    }
+
+    .card:hover {
+        transform: scale(1);
+        cursor: none;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 95%;
+        height: auto;
     }
 }

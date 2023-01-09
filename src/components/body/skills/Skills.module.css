@@ -1,6 +1,8 @@
 .skills_section {
-    margin: 50px;
-    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .text_top {
@@ -25,6 +27,13 @@
     max-width: 40%;
 }
 
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+}
+
 iconify-icon {
     font-size: 40px;
     margin: 0 6px 12px;
@@ -37,6 +46,13 @@ iconify-icon {
     margin: 30px 0;
 }
 
+
+@media (max-width: 1180px) {
+    .technologies {
+        width: auto;
+    }
+}
+
 /* #3- Landscape phone to portrait tablet */
 
 @media (max-width: 767px) {
@@ -45,11 +61,30 @@ iconify-icon {
         flex-direction: column;
         text-align: center;
     }
+
     .child {
         width: 100%;
         max-width: 100%;
     }
-    .left_content{
+
+    .left_content {
         display: none;
+    }
+
+    .technologies {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .text_top {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .text_top {
+        font-size: 15px;
     }
 }
